@@ -12,16 +12,64 @@ export const products = [
           color: "White",
           colorCode: "#FFFFFF",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622161445-iphone14-white.png?alt=media&token=fe2065e5-fdfe-4a6f-baa6-380b5fad90b8",
+            "/images/12334356-iphone14-white-small.jpeg",
         },
         {
-          color: "Gray",
-          colorCode: "#808080",
+          color: "Yellow",
+          colorCode: "#FFFF00",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688622165836-iphone14-gray.png?alt=media&token=58f684db-998e-43eb-aa06-efe3d6ccfad4",
+            "/images/1815-apple-iphone-14-pro-max-256gb-oro-libre.jpg",
+        },
+        {
+          color: "Black",
+          colorCode: "#000000",
+          image:
+            "/images/iphone_14_mid_night_1_1.webp",
         },
       ],
-      reviews: [],
+      reviews: [
+        {
+          id: "6499b4887402b0efd394d8f3",
+          userId: "6499b184b0e9a8c8709821d3",
+          productId: "648437b38c44d52b9542e340",
+          rating: 3,
+          comment:
+            "good enough. I like the camera and casing. the delivery was fast too.",
+          createdDate: "2023-06-26T15:53:44.483Z",
+          user: {
+            id: "6499b184b0e9a8c8709821d3",
+            name: "Chaoo",
+            email: "example1@gmail.com",
+            emailVerified: null,
+            image:
+              "https://lh3.googleusercontent.com/a/AAcHTtcuRLwWi1vPKaQOcJlUurlhRAIIq2LgYccE8p32=s96-c",
+            hashedPassword: null,
+            createdAt: "2023-06-26T15:40:52.558Z",
+            updatedAt: "2023-06-26T15:40:52.558Z",
+            role: "USER",
+          },
+        },
+        {
+          id: "6499a110efe4e4de451c7edc",
+          userId: "6475af156bad4917456e6e1e",
+          productId: "648437b38c44d52b9542e340",
+          rating: 2,
+          comment: "I really liked it!!",
+          createdDate: "2023-06-26T14:30:40.998Z",
+          user: {
+            id: "6475af156bad4917456e6e1e",
+            name: "Charles",
+            email: "example@gmail.com",
+            emailVerified: null,
+            image:
+              "https://lh3.googleusercontent.com/a/AAcHTteOiCtILLBWiAoolIW9PJH-r5825pBDl824_8LD=s96-c",
+            hashedPassword: null,
+            createdAt: "2023-05-30T08:08:53.979Z",
+            updatedAt: "2023-05-30T08:08:53.979Z",
+            role: "ADMIN",
+          },
+        },
+      ],
     },
     {
       id: "64a4ebe300900d44bb50628a",
@@ -37,7 +85,7 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529886610-black-logitech-keyboard.jpg?alt=media&token=353aa276-1316-4e50-bc26-8e3828fe6cdd",
+            "/images/blacklogitechkeyboard.jpeg",
         },
       ],
       reviews: [
@@ -77,19 +125,19 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386605041-iphone12-black.jpg?alt=media&token=32abf316-ddf6-4870-9e1e-a7c884b750d6",
+            "/images/2F1686386605041-iphone12-black.webp",
         },
         {
           color: "Blue",
           colorCode: " #0000FF",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386607274-iphone12-blue.jpg?alt=media&token=e83a9b13-86b6-4518-9f1e-8ddef12ba9a2",
+            "/images/2F1686386607274-iphone12-blue.webp",
         },
         {
           color: "Red",
           colorCode: "#FF0000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1686386608652-iphone12-red.jpg?alt=media&token=603a9e86-5b8c-4f8d-b61c-c1c77e60e954",
+            "/images/2F1686386608652-iphone12-red.webp",
         },
       ],
       reviews: [
@@ -150,7 +198,7 @@ export const products = [
           color: "Graphite",
           colorCode: " #383838",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688529379028-logitech-graphite-mouse.jpg?alt=media&token=f9dfba29-832f-4c58-88c6-a7a0ae6b22bf",
+            "/images/2F1688529379028-logitech-graphite-mouse.jpg",
         },
       ],
       reviews: [],
@@ -169,13 +217,13 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041293609-watch-black.jpg?alt=media&token=270f918c-d9f5-41a2-ad32-45d5f3c66bf0",
+            "/images/2F1688041293609-watch-black.jpg",
         },
         {
           color: "Silver",
           colorCode: "#C0C0C0",
           image:
-            "https://firebasestorage.googleapis.com/v0/b/ecommerce-shop-cc542.appspot.com/o/products%2F1688041295389-watch-silver.jpg?alt=media&token=7341e7f0-5c29-4f91-a7e3-57e50faafb74",
+            "/images/2F1688041295389-watch-silver.jpg",
         },
       ],
       reviews: [],

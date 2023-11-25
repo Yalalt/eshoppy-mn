@@ -2,7 +2,7 @@ export const products = [
     {
       id: "64a654593e91b8e73a351e9b",
       name: "iphone 14",
-      description: "Short description",
+      description: "The product is refurbished, fully functional, and in excellent condition. Backed by the 90-day E~Shop Renewed Guarantee. This pre-owned product has been professionally inspected, tested and cleaned by Amazon qualified vendors. It is not certified by Apple. This product is in Excellent condition.",
       price: 2999,
       brand: "apple",
       category: "Phone",

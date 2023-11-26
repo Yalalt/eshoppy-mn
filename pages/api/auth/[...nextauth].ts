@@ -15,25 +15,25 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
     CredentialsProvider({
-      name: 'Credentials',
+      name: 'regCredentials',
       credentials: {
         email: { label: 'Email', type: 'text' },
         password: { label: 'Password', type: 'password' },
       },
-      async authorize(Credentials) {
-        if(!Credentials?.email || !Credentials?.password) {
+      async authorize(credentials) {
+        if(!credentials?.email || !credentials?.password) {
           throw new Error('Invalid Email or Password');
         }
 
         const user = await prisma.user.findUnique({
-          where: { email: Credentials.email },
+          where: { email: credentials.email },
         });
 
         if(!user || !user?.hashedPassword){
           throw new Error('Invalid Email or Password');
         }
 
-        const isCorrect = await bcrypt.compare(Credentials.password, user.hashedPassword);
+        const isCorrect = await bcrypt.compare(credentials.password, user.hashedPassword);
 
         if(!isCorrect){
           throw new Error('Invalid Email or Password');

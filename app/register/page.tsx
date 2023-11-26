@@ -2,12 +2,16 @@ import { Container } from '@mui/material';
 import React from 'react';
 import FormWrap from '../components/FormWrap';
 import RegisterForm from './RegisterForm';
+import { getCurrentUser } from '@/actions/getCurrentUser';
 
-const Register = () => {
+const Register = async () => {
+  const currentUser = await getCurrentUser();
+
+
   return (
     <Container>
       <FormWrap>
-        <RegisterForm />
+        <RegisterForm currentUser={currentUser} />
       </FormWrap>
     </Container>
   );

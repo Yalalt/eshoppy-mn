@@ -31,13 +31,12 @@ const Input:React.FC<InputProps> = ({
         {...register(id, { required })}
         type={type || 'text'}
         placeholder=''
-        className={`
-        peer
+        className={`peer
         w-full
         p-4
         pt-6
         outline-none
-        by-white
+        bg-white
         font-light
         border-2
         rounded-md
@@ -45,10 +44,10 @@ const Input:React.FC<InputProps> = ({
         disabled:opacity-70
         disabled:cursor-not-allowed
         ${errors[id] ? 'border-rose-400' : 'border-slate-300'}
-        ${errors[id] ? 'focus:border-rose-400' : 'focus:border-slate-300'}
-        `}
+        ${errors[id] ? 'focus:border-rose-400' : 'focus:border-slate-300'}`}
          />
-        <label htmlFor={id} className='absolute
+        <label htmlFor={id} className={`
+        absolute
         cursor-text
         text-md
         duration-150
@@ -61,8 +60,11 @@ const Input:React.FC<InputProps> = ({
         peer-placeholder-shown:scale-100
         peer-placeholder-shown:translate-y-0
         peer-focus:scale-75
-        peer-focus:translate-y-4
-        '>{label}</label>
+        peer-focus:-translate-y-4
+        ${errors[id] ? "text-rose-500" : "text-slate-400"}
+        `}
+        
+        >{label}</label>
     </div>
   )
 }

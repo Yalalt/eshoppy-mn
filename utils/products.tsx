@@ -24,7 +24,7 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "/images/iphone_14_mid_night_1_1.webp",
+            "/images/iphone_14_mid_night_1_1.jpeg",
         },
       ],
       reviews: [
@@ -125,19 +125,19 @@ export const products = [
           color: "Black",
           colorCode: "#000000",
           image:
-            "/images/2F1686386605041-iphone12-black.webp",
+            "/images/2F1686386605041-iphone12-black.jpeg",
         },
         {
           color: "Blue",
           colorCode: " #0000FF",
           image:
-            "/images/2F1686386607274-iphone12-blue.webp",
+            "/images/2F1686386607274-iphone12-blue.jpeg",
         },
         {
           color: "Red",
           colorCode: "#FF0000",
           image:
-            "/images/2F1686386608652-iphone12-red.webp",
+            "/images/2F1686386608652-iphone12-red.jpeg",
         },
       ],
       reviews: [

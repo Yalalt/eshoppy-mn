@@ -32,8 +32,8 @@ export const CartContextProvider = (props: Props) => {
     setCartProducts(cartProducts);
   }, []);
 
-  console.log("cartTotalQty ==> ", cartTotalQty);
-  console.log("cartTotalAmount ==> ", cartTotalAmount);
+  // console.log("cartTotalQty ==> ", cartTotalQty);
+  // console.log("cartTotalAmount ==> ", cartTotalAmount);
 
   useEffect(() => {
     const getTotals = () => {

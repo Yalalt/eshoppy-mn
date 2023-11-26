@@ -1,11 +1,12 @@
 'use client';
 import React from 'react';
-import Heading from '../components/Heading';
-import Input from '../components/inputs/Input';
-import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
-import Button from '../components/Button';
 import Link from 'next/link';
+import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import { AiOutlineGoogle } from 'react-icons/ai';
+
+import Heading from '@/app/components/Heading';
+import Input from '@/app/components/inputs/Input';
+import Button from '@/app/components/Button';
 
 const RegisterForm = () => {
   const [isLoading, setIsLoading] = React.useState(false);

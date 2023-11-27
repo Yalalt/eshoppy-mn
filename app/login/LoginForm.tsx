@@ -67,7 +67,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ currentUser }) => {
   return (
     <>
       <Heading title='Login for eShoppy' />
-      
+
       <Button outline label='Continue with Google' icon={AiOutlineGoogle} disabled={isLoading} 
       onClick={() => {signIn('google')}} />
 

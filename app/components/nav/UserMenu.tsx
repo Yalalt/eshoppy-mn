@@ -14,11 +14,9 @@ interface UserMenuProps {
 const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleOpen = useCallback(() => {
-    setIsOpen((prev) => !prev);
-  }, []);
+  const toggleOpen = useCallback(() => setIsOpen((prev) => !prev), []);
 
-  console.log(toggleOpen, ' --> Toggle Open');
+  // console.log('Toggle Open --> ', toggleOpen);
 
   return (
     <>

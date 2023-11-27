@@ -76,7 +76,8 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ currentUser }) => {
     <>
       <Heading title='Sign up for eShoppy' />
 
-      <Button outline label='Sign up with Google' icon={AiOutlineGoogle} disabled={isLoading} onClick={() => {}} />
+      <Button outline label='Sign up with Google' icon={AiOutlineGoogle} disabled={isLoading} onClick={() => {signIn('google')}} />
+      
       <hr className='bg-slate-300 w-full h-px' />
       <Input id='name' label='Name' disabled={isLoading} register={register} errors={errors} required />
       <Input id='email' label='Email' disabled={isLoading} register={register} errors={errors} required />

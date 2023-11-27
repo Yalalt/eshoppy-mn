@@ -67,9 +67,10 @@ const LoginForm: React.FC<LoginFormProps> = ({ currentUser }) => {
   return (
     <>
       <Heading title='Login for eShoppy' />
-
+      
       <Button outline label='Continue with Google' icon={AiOutlineGoogle} disabled={isLoading} 
-      onClick={() => {}} />
+      onClick={() => {signIn('google')}} />
+
       <hr className='bg-slate-300 w-full h-px' />
       <Input id='email' label='Email' disabled={isLoading} register={register} errors={errors} required />
       <Input
@@ -83,7 +84,6 @@ const LoginForm: React.FC<LoginFormProps> = ({ currentUser }) => {
       />
 
       <Button label={isLoading ? 'Loading...' : 'Login'} disabled={isLoading} onClick={handleSubmit(onSubmit)} />
-
       <p className='text-sm'>
         Do not have an account?{' '}
         <Link href='/register' className='underline'>

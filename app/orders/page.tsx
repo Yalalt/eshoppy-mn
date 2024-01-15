@@ -18,7 +18,7 @@ const Orders = async () => {
   const orders = await getOrdersByUserId(currentUser.id);
 
   if(!orders) {
-    return <NullData title='Oops! No Orders Found' />
+    return <NullData title='No Orders yet...' />
   }
 
   return (

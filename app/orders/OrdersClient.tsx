@@ -1,7 +1,6 @@
 'use client';
 
 import { Order, User } from '@prisma/client';
-import React, { useCallback } from 'react';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { formatPrice } from '@/utils/formatPrice';
 import Heading from '@/app/components/Heading';
@@ -13,8 +12,6 @@ import {
   MdRemoveRedEye,
 } from 'react-icons/md';
 import ActionBtn from '@/app/components/ActionBtn';
-import axios from 'axios';
-import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import moment from 'moment';
 

@@ -19,7 +19,6 @@ const Order = async ({ params }: { params: IParams }) => {
     <div className='p-8'>
       <Container>
         <OrderDetails order={order} />
-        
       </Container>
     </div>
   );

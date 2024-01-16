@@ -11,7 +11,7 @@ export default async function getOrdersByUserId(userId: string) {
         user: true,
       },
       orderBy: {
-        createdAt: 'desc',
+        createdDate: 'desc',
       },
     });
 

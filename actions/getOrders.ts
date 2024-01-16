@@ -7,7 +7,7 @@ export default async function getOrders() {
         user: true,
       },
       orderBy: {
-        createdAt: 'desc',
+        createdDate: 'desc',
       },
     });
 

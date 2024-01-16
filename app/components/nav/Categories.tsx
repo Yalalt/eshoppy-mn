@@ -9,12 +9,11 @@ const Categories = () => {
   const params = useSearchParams();
   const category = params?.get('category');
   const pathname = usePathname();
+  const isMainPage = pathname === '/';
 
 //   console.log("Search params: ");
 //   console.log(params);
 //   console.log("Pathname: ", pathname);
-
-  const isMainPage = pathname === '/';
 
   // only see main page
   if(!isMainPage) return null;

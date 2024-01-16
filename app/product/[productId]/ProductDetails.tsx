@@ -53,7 +53,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
 
   // console.log(cartProduct, ' ===> cartProduct');
   // console.log(cartTotalQty, ' ===> cartTotalQty');
-  console.log(cartProducts, ' ===> cartProducts');
+  // console.log(cartProducts, ' ===> cartProducts');
 
   useEffect(() => {
     setIsProductInCart(false);

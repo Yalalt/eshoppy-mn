@@ -42,7 +42,7 @@ export default async function getProducts(params: IProductParams) {
             user: true,
           },
           orderBy: {
-            createdAt: 'desc',
+            createdDate: 'desc',
           },
         },
       },

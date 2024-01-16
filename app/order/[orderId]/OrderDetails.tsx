@@ -53,7 +53,7 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({ order }) => {
           )}
         </div>
       </div>
-            <div>Date: {moment(order.createdAt).fromNow()}</div>
+            <div>Date: {moment(order.createdDate).fromNow()}</div>
             <div>
                 <h2 className='font-semibold mt-4 mb-2'>
                     Products ordered

@@ -33,12 +33,12 @@ model User {
   emailVerified  DateTime?
   image          String?
   hashedPassword String?
-  createdAt      DateTime  @default(now())
-  updatedAt      DateTime  @updatedAt
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
   role           Role      @default(USER)
 
   accounts Account[]
-  Order    Order[]
+  orders   Order[]
   reviews  Review[]
 }
 
@@ -55,20 +55,20 @@ model Product {
   brand       String
   category    String
   inStock     Boolean
-  images       Image[]
+  images      Image[]
   reviews     Review[]
 }
 
 model Review {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  useId     String   @db.ObjectId
-  productId String   @db.ObjectId
-  rating    Int
-  comment   String
-  createdAt DateTime @default(now())
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId      String   @db.ObjectId
+  productId   String   @db.ObjectId
+  rating      Int
+  comment     String
+  createdDate DateTime @default(now())
 
   product Product @relation(fields: [productId], references: [id])
-  user    User    @relation(fields: [useId], references: [id])
+  user    User    @relation(fields: [userId], references: [id])
 }
 
 model Order {
@@ -78,7 +78,7 @@ model Order {
   currency        String
   status          String
   deliveryStatus  String?
-  createdAt       DateTime          @default(now())
+  createdDate     DateTime          @default(now())
   paymentIntentId String            @unique
   products        CartProductType[]
   address         Address?

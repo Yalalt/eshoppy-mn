@@ -26,7 +26,7 @@ const NavBar = async () => {
               md-gap-0
           '
           >
-            <Link href='/' className={`${redressed.className} font-bold text-2xl`}>eShoppy</Link>
+            <Link href='/' className={`${redressed.className} font-bold text-2xl`}>ecoShop</Link>
             <div className='hidden md:block'>
               <SearchBar />
             </div>

@@ -25,7 +25,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
           fill 
           src={data.images[0].image} 
           alt={data.name}
-          className='w-full h-full object-contain' />
+          className='w-full h-full object-contain'
+          sizes='(max-width: 200px) 100vw, 200px'
+          />
         </div>
         <div className='mt-4'>
             {truncateText(data.name)}

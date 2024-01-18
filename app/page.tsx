@@ -1,4 +1,4 @@
-export const revalidate = 0;
+export const revalidate = 3600 * 24;
 
 import Container from './components/Container';
 import HomeBanner from './components/HomeBanner';

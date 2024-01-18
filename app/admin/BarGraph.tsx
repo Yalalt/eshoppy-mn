@@ -17,9 +17,6 @@ type GraphData = {
 }
 
 const BarGraph:React.FC<BarGraphProps> = ({ data }) => {
-    // console.log("Graph Data here ====>");
-    // console.log(data);
-
     const label = data.map((item) => item.day);
     const amounts = data.map((item) => item.totalAmount);
     const chartData = {

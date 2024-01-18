@@ -102,8 +102,7 @@ const AddProductForm = () => {
                 'state_changed',
                 (snapshot) => {
                   const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-
-                  console.log('Upload is ' + progress + '% done');
+                  // console.log('Upload is ' + progress + '% done');
 
                   switch (snapshot.state) {
                     case 'paused':
@@ -125,7 +124,7 @@ const AddProductForm = () => {
                         ...item,
                         image: downloadURL,
                       });
-                      console.log('File available at', downloadURL);
+                      // console.log('File available at', downloadURL);
                       resolve(downloadURL);
                     })
                     .catch((error) => {
@@ -146,12 +145,9 @@ const AddProductForm = () => {
 
     await handleImageUploads();
     const productData = {...data, images: uploadedImages};
-    console.log("Product Data: ", productData);
 
     // save information product on MongoDB
     axios.post('/api/product', productData).then((res) => {
-      console.log('Product  on Mongodb: ', res.data);
-
       setIsProductCreated(true);
       toast.success('Product created successfully!');
 

@@ -14,8 +14,6 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { name, description, price, brand, category, inStock, images } = body;
 
-  console.log('BE::: Body ==> ', body);
-
   const newProduct = await prisma.product.create({
     data: {
       name,

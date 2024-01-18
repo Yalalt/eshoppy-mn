@@ -40,8 +40,6 @@ export const CartContextProvider = (props: Props) => {
     setPaymentIntent(paymentIntent);
   }, []);
 
-  // console.log("cartTotalQty ==> ", cartTotalQty);
-  // console.log("cartTotalAmount ==> ", cartTotalAmount);
 
   useEffect(() => {
     const getTotals = () => {

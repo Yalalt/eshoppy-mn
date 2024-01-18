@@ -11,15 +11,8 @@ const Categories = () => {
   const pathname = usePathname();
   const isMainPage = pathname === '/';
 
-//   console.log("Search params: ");
-//   console.log(params);
-//   console.log("Pathname: ", pathname);
-
   // only see main page
   if(!isMainPage) return null;
-
-//   console.log("Category: ", category);
-//   console.log("is Mainpage value is: ", isMainPage);
 
   return (
     <div className='bg-white'>

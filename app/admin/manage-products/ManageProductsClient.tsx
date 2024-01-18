@@ -24,8 +24,6 @@ const ManageProductsClient: React.FC<ManageProductsClientProps> = ({ products })
   const router = useRouter();
   const storage = getStorage(firebaseApp);
 
-  console.log('PRODUCTS LIST: +++ ', products);
-
   if (products) {
     rows = products.map((product) => {
       return {
@@ -116,7 +114,7 @@ const ManageProductsClient: React.FC<ManageProductsClientProps> = ({ products })
               const imageRef = ref(storage, item.image);
               await deleteObject(imageRef);
 
-              console.log("Image Deleted", item.image);
+              // console.log("Image Deleted", item.image);
             }
           }
         } catch (error: any) {

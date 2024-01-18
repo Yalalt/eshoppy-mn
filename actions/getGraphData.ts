@@ -10,9 +10,6 @@ export default async function getGraphData() {
         const startDate = moment().subtract(6, "days").startOf("day");
         const endDate = moment().endOf("day");
 
-        // console.log("startDate", startDate.toISOString());
-        // console.log("endDate", endDate.toISOString());
-
         // query db to get order data grouped by createdDate
         const result = await prisma?.order.groupBy({
             by: ["createdDate"],
@@ -41,7 +38,6 @@ export default async function getGraphData() {
         while (currentDate <= endDate) {
             // Format day as string "Monday Tuesday..."
             const day = currentDate.format("dddd");
-            // console.log("Current Day format dddd >>> ", day, currentDate);
 
             // initialize the aggregated data for the day with the day, date, totalAmount
             aggregatedData[day] = {
